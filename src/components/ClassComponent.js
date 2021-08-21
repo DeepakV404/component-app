@@ -6,6 +6,10 @@ class ClassComponent extends Component{
             <div>
                 <h1>Hey there!!</h1>
                 <h2>This is a class component</h2>
+                <h2>
+                    {this.props.clsProps}
+                </h2>
+                {this.props.children}
             </div>
         )
     }
