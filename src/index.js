@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+  route,
+  link, 
+  Switch
+} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <StrictMode>
+    <App/>
+  </StrictMode>
+  ,
   document.getElementById('root')
 );
 

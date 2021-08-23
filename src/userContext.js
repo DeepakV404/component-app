@@ -6,5 +6,8 @@ const UserContext = React.createContext("Deepak");
 const ValueProvider = UserContext.Provider
 const ValueConsumer = UserContext.Consumer
 
-export { ValueProvider, ValueConsumer }
+const AgeProvider = UserContext.Provider
+const AgeConsumer = UserContext.Consumer
+
+export { ValueProvider, ValueConsumer, AgeProvider, AgeConsumer }
 export default UserContext

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ValueConsumer } from './userContext';
+import { ValueConsumer } from '../userContext';
 
 
 class ComponentC extends Component {
@@ -16,7 +16,7 @@ class ComponentC extends Component {
                             )
                         }
                     }
-               </ValueConsumer>
+               </ValueConsumer> 
             </div>
         )
     }
