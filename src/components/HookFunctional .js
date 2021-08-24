@@ -4,7 +4,7 @@ function HookFunctional () {
     const [count, setCount] = useState(0)
     return (
         <div>
-            <button onClick = {() => setCount(count+1), console.log(count)}>Click to increase count</button>
+            <button onClick = {() => setCount(count+1)}>Click to increase count</button>
         </div>
     )
 }

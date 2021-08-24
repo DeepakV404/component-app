@@ -17,13 +17,14 @@ import Home from './components/Home';
 import Dashboard from './components/Dashboard';
 function App() {
   return (
-    <Router>
+<div>
+
     <div className="App">
       {/*<FnComponent/>*/}
       {/* <ClsComponent clsProps = "This is a prop passed for a class component"/>
-      <ClsComponent><p>Children props of a class component.</p></ClsComponent>
+      <ClsComponent><p>Children props of a class component.</p></ClsComponent> */}
       
-      <NstComponent name="Deepak" age="20" >
+      {/* <NstComponent name="Deepak" age="20" >
         <p> .......Childeren props...........</p>
       </NstComponent>
       <StateComponent/>
@@ -34,28 +35,33 @@ function App() {
         <ComponentA/>
       </ValueProvider>
       
-      <HookFunctional/>
+      <HookFunctional/> */}
 
-      <AgeProvider value="21">
+      {/* <AgeProvider value="21">
         <ComponentA/>
       </AgeProvider>  */}
+      <h1>Use /statecomponent after the url to see the state component</h1>
+    </div>
+    <Router>
 
       <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/dashboard">Ddashboard</Link>
+          <Link to="/dashboard/">Ddashboard</Link>
         </li>
       </ul>
       <Switch>
       <Route exact path='/' component={Home}/>
       
       <Route exact path='/dashboard' component={Dashboard}/>
+      <Route exact path='/statecomponent' component={StateComponent}/>
       </Switch>
       
-    </div>
+    
     </Router>
+    </div>
   );
 }
 
